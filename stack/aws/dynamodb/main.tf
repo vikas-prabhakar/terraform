@@ -1,5 +1,5 @@
 module "s3" {
-  source              = "git::git@github.com:vikas-prabhakar/terraform-s3.git?ref=v0.0.2"
+  source              = "git::git@github.com:vikas-prabhakar/terraform-s3.git?ref=v0.0.1"
   bucket_name	      = "statelocking"
   versioning_enabled  = "true"
   profile	      = "default"
@@ -7,7 +7,6 @@ module "s3" {
 
 module "dynamodb" {
   source              = "git::git@github.com:vikas-prabhakar/terraform-dynamodb.git?ref=v0.0.1"
-  source              = "terraform/modules/s3/main.tf"
   profile             = "default"
   dynamodb_name       = "terraformlock"
 }
