@@ -6,7 +6,7 @@ module "s3" {
 }
 
 module "dynamodb" {
-  source              = "git::git@github.com:vikas-prabhakar/terraform-dynamodb.git?ref=v0.0.1""
+  source              = "git::git@github.com:vikas-prabhakar/terraform-dynamodb.git?ref=v0.0.1"
   source              = "terraform/modules/s3/main.tf"
   profile             = "default"
   dynamodb_name       = "terraformlock"
