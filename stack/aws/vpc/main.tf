@@ -11,7 +11,7 @@ module "vpc" {
   source              = "git::git@github.com:vikas-prabhakar/terraform-vpc.git?ref=v0.0.1"
   name                = "stack"
   environment         = "prod"
-  vpc_cidr            = "10.0.0.0/24"
+  vpc_cidr            = "10.0.0.0/18"
   profile             = "default"
 }
 
