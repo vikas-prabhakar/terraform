@@ -1,0 +1,18 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+#credential files
+*.gpg
+*.pem
