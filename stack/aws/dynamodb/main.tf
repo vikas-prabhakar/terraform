@@ -1,5 +1,5 @@
 module "s3" {
-  source              = "git::git@github.com:vikas-prabhakar/terraform-s3.git?ref=v0.0.3"
+  source              = "git::git@github.com:vikas-prabhakar/terraform-s3.git?ref=v0.0.4"
   bucket_name	      = "statelocking"
   versioning_enabled  = "true"
   profile	      = "default"
